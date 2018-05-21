@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Major Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="Stylesheets/style.css">
+    <script type="text/javascript" src="Scripts/common.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar navbar-fixed-top">
+        <div class="container-fluid">
+
+            <!-- Logo -->
+            <div class="navbar-header">
+                <!-- Button for NavBar appears in smaller devices -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="Index.html" class="navbar-brand">MAJOR PROJECT</a>
+            </div>
+
+            <!-- Menu Items -->
+            <!-- Basic horizontal menu -->
+            <div class="collapse navbar-collapse" id="mainNavBar">
+                <ul class="nav navbar-nav">
+                    <li><a href="Index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                    <li><a href="About.html"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+                    <li class="active"><a href="Contact.html"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
+                    <!-- Add a dropdown menu -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">All Contents
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="images.html"><i class="glyphicon glyphicon-picture"></i> Images</a></li>
+                            <li><a href="videos.html"><i class="glyphicon glyphicon-film"></i> Videos</a></li>
+                            <li><a href="text.html"><i class="glyphicon glyphicon-text-size"></i> Text Mode</a></li>
+                        </ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="col-xs-12">
+    <form name="UserProlfileForm" id="UserProlfileForm" class="form-horizontal">
+            <h2>User Information</h2>
+            <ul>
+                <li>
+                <div class="row">
+                    <div class="col-lg-12">
+                    <label for="SomeText"  class="control-label">Enter some text:</label>
+                
+                    <input type="text" placeholder="Enter some text" id="SomeText" />
+                
+                    <p class="Error" id="SomeTextErr">Please enter some text</p>
+                    </div>
+              </div>
+                </li>
+                <li>
+                <div class="row">
+                    <div class="col-lg-12">
+                    <label for="emailaddress1" class="control-label">Enter an email address:</label>
+                
+                    <input type="email" placeholder="Enter email address" id="emailaddress1" />
+                
+                    <p class="Error" id="emailaddress1Err">Please enter a valid email</p>
+                    </div>
+                </div>
+                </li>
+                <li>
+                <div class="row">
+                    <div class="col-lg-12">
+                    <label for="tel1" class="control-label">Enter a telephone number:</label>
+                
+                    <input type="tel" placeholder="Enter phone number" id="tel1" />
+                
+                    <p class="Error" id="tel1Err">Please enter a valid phone number</p>
+                    </div>
+                </div>
+                </li>
+            </ul>
+       
+            <h2>User Options</h2>
+            <ul>
+                <li>
+                    <label for="Gender">Gender</label>
+                    <ul>
+                        <li>
+                            <input type="radio" name="Gender" value="1" />
+                            Male</li>
+                        <li>
+                            <input type="radio" name="Gender" value="2" />
+                            Female</li>
+                    </ul>
+                    <p class="Error" id="GenderErr">Please select a Gender</p>
+                </li>
+                <li>
+                    <label for="Options">Options</label>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="Options" value="1" />
+                            Send me email</li>
+                        <li>
+                            <input type="checkbox" name="Options" value="2" />
+                            Subscribe to our newsletter</li>
+                    </ul>
+                    <p class="Error" id="OptionsErr">Please select an option</p>
+                </li>
+                <li>
+                    <label for="Province">Province</label>
+                    <select id="Province">
+                        <option value="">--Choose--</option>
+                        <option value="ON">Ontario</option>
+                        <option value="BC">Manitoba</option>
+                        <option value="YT">Yukon</option>
+                        <option value="MA">British Columbia</option>
+                    </select>
+                    <p class="Error" id="ProvinceErr">Please select a Province</p>
+                </li>
+            </ul>
+        <p>
+            <input class="btn btn-primary" type="button" value="Validate" onclick="ValidateForm()" />
+        </p>
+    </form>
+    </div>
+</div>
+    <footer>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+                <h6>Copyright &copy; 2016 Harshit Sharma</h6>
+            </div>
+            <div class="footerText col-lg-8 col-md-8 col-sm-6 col-xs-6" id="center">
+                <h6>MAJOR PROJECT - Futuristic Vehicles</h6>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3">
+                <h6>Navigation</h6>
+                    <ul class="unstyled">
+                        <li><a href="#"><span class="glyphicon glyphicon-arrow-up"></span> Back to Top</a></li>
+                        <li><a href="Index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li><a href="About.html"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
+                        <li><a href="Contact.html"><span class="glyphicon glyphicon-user"></span> Contact</a></li>
+                    </ul>
+            </div>
+        </div>
+</footer>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>
