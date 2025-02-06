@@ -2,4 +2,4 @@
 
 Check Out: [FuturisticVehicles]
 
-[FuturisticVehicles]: https://futuristicvehicles.herokuapp.com/
+[FuturisticVehicles]: http://futuristicvehicles.netlify.app/
